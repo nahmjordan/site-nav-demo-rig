@@ -13,6 +13,9 @@
     "url": "git://github.com/nahmjordan/site-nav-demo.git"
   },
   "dependencies": {
+    "express": "^4.15.3",
+    "python": "^0.0.4",
+    "robotjs": "^0.4.7",
     "screen-capture-recorder": "^1.5.0"
   }
 }
