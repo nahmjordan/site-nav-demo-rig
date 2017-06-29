@@ -1,5 +1,6 @@
 //run with node
 
+const path = require('path');
 var robot = require("robotjs");
 
 const screenSize = robot.getScreenSize();
@@ -12,20 +13,7 @@ console.log(`screen width is: ` + width + `px`);
 robot.setMouseDelay(2);
 //ms per mouse movement event (default is 10)
 
-    var start = setupQlear();
-
-    start.next();
-    setTimeout(function () {
-      start.next();
-    }, 3000);
-    setTimeout(function () {
-      start.next();
-    }, 5000);
-    start.next();
-    setTimeout(function () {
-      start.next();
-    }, 5000);
-
+/*
     function* setupQlear (callback) {
    console.log('step 1, get open windows menu');
   robot.keyToggle('control', 'down');
@@ -46,6 +34,26 @@ robot.setMouseDelay(2);
    console.log("step 4, get qlear")
   robot.typeString('qlear.build');
   robot.keyTap('enter');
-  return "qlear ready";/**/
+  return "qlear ready";
 }
 
+    var start = setupQlear();
+
+    start.next();
+    setTimeout(function () {
+      start.next();
+    }, 3000);
+    setTimeout(function () {
+      start.next();
+    }, 5000);
+    start.next();
+    setTimeout(function () {
+      start.next();
+    }, 5000);
+    */
+
+if (path.sep === "\\") {
+  console.log("Windows \n");
+} else {
+  console.log("Not Windows \n");
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>QLEAR</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <link rel="stylesheet" href="static/css/index.main.debug.css" charset="utf-8">
+  <script src="static/assets/javascripts/config.js"></script>
+  <script type='text/javascript'>
+    var u = navigator.userAgent.toLowerCase();
+    if (!~u.indexOf('iphone') && !~u.indexOf('android')) {
+      location.href = appconfig.webUrl;
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="main-content">
+      <img src="static/assets/qlear-logo-white.png" alt="qlear" class='main-logo'>
+      <div><span class="main-border"></span></div>
+      <p class="main-text i18n-text" data-i18n="mainTextA"></p>
+      <p class="main-text i18n-text" data-i18n="mainTextB"></p>
+    </div>
+
+    <div class="click-content">
+      <p class="click-text"><a href="#" class="i18n-text" data-i18n="clickTextA"></a></p>
+      <div class="click-border"></div>
+      <p class="click-text"><a href="#" class="i18n-text" data-i18n="clickTextB"></a></p>
+    </div>
+  </div>
+  <script src="static/assets/javascripts/index.js"></script>
+</body>
+
+</html>
